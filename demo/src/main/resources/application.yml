@@ -2,5 +2,5 @@
 spring:
   config:
     activate:
-      on-profile: local
+      on-profile: docker, local
 ---

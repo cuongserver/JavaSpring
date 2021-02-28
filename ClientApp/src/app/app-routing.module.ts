@@ -3,15 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    // matcher: (segments) => {
-    //   console.log(segments);
-    //   if (segments.length >= 1) {
-    //     if (segments[0].path === 'entry') {
-    //       return { consumed: segments };
-    //     }
-    //   }
-    //   return null;
-    // },
     path: 'entry',
     loadChildren: () =>
       import('@src/app/modules/entry-module/entry.module').then(
